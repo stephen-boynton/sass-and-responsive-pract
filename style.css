@@ -1,0 +1,162 @@
+* {box-sizing:border-box}
+
+body {
+  background: linear-gradient(rgba(40, 40, 40, 0.75),
+                                rgba(40, 40, 40, 0.75)),
+              url("img/parisbg.jpeg");
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 0 auto;
+}
+
+header {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  display: flex;
+}
+
+.logo h1:first-child {
+  color: #e87e1c;
+}
+
+.logo h1:nth-child(2) {
+  color: white;
+}
+
+.circle {
+  height: 5px;
+  width: 5px;
+  border-radius: 2.5px;
+  background-color: white;
+}
+
+header a {
+  text-decoration: none;
+  color: white;
+}
+
+header > button {
+  background-color: #e87e1c;
+  padding: 10px 25px;
+  border: none;
+  color: white;
+  text-transform: uppercase;
+  font-family: Helvetica, sans-serif;
+  font-weight: bold;
+}
+
+main {
+  display: flex;
+  flex-basis: 100%;
+  justify-content: space-around;
+}
+
+.hero-image {
+  flex-basis: 50%;
+  background: linear-gradient(rgba(49, 89, 8, 0.2),
+                                rgba(49, 89, 8, 0.2)),
+              url("img/hero-pic.jpeg");
+  background-size: cover;
+  background-position: center;
+}
+
+.hero-ad {
+  padding: 25px;
+  flex-basis: 50%;
+  font-family: Helvetica, sans-serif;
+  background: linear-gradient(rgba(49, 89, 8, 0.7),
+                              rgba(49, 89, 8, 0.7)),
+              url("img/hero-ad.jpeg")
+}
+
+.hero-ad h2 {
+  font-size: 50px;
+  color: white;
+}
+
+.hero-ad h4 {
+  text-transform: uppercase;
+  color: #edf050;
+}
+
+.hero-ad p {
+  font-family: Times, serif;
+  color: white;
+  line-height: 1.6em;
+}
+
+.tours {
+  display: flex;
+}
+/* Slideshow container */
+.slideshow-container {
+  flex-basis: 100%;
+  position: relative;
+  margin: auto;
+}
+
+.tourSlide {
+    display: none;
+}
+
+.tour-1 {
+  background: linear-gradient(rgba(77, 77, 77, 0.4),
+                              rgba(77, 77, 77, 0.4)),
+              url("img/img1.jpeg");
+  background-size: cover;
+  width: 100%;
+  padding: 200px;
+}
+
+.tour-2 {
+  background: linear-gradient(rgba(77, 77, 77, 0.4),
+                              rgba(77, 77, 77, 0.4)),
+              url("img/img1.jpeg");
+  background-size: cover;
+  width: 100%;
+  padding: 200px;
+}
+
+.tour-3 {
+  background: linear-gradient(rgba(77, 77, 77, 0.4),
+                              rgba(77, 77, 77, 0.4)),
+              url("img/img1.jpeg");
+  background-size: cover;
+  width: 100%;
+  padding: 200px;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
